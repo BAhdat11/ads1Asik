@@ -12,22 +12,17 @@ public class task3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Prompt to ask the user to input the number to check for primality
         System.out.println("Enter a number to check if it's prime:");
         int n = sc.nextInt();
 
-        // Start measuring execution time
+        
         long startTime = System.nanoTime();
 
-        // Calling the recursive function to check if the number is prime
         boolean isPrime = checkPrimeRecursive(n, 2);
 
         long endTime = System.nanoTime();
 
-        // Calculate the time taken in milliseconds
         double duration = (endTime - startTime) / 1_000_000.0;
-
-        // Output if the number is prime and the execution time
         System.out.println(n + " is prime: " + isPrime);
         System.out.println("Execution time: " + duration + " milliseconds");
     }
@@ -43,17 +38,14 @@ public class task3 {
      * @return true if the number is prime, false otherwise
      */
     public static boolean checkPrimeRecursive(int n, int divisor) {
-        // Base case: if divisor exceeds sqrt(n), the number is prime
         if (divisor > Math.sqrt(n)) {
             return true;
         }
 
-        // If the number is divisible by the current divisor, it is not prime
         if (n % divisor == 0) {
             return false;
         }
 
-        // Recursively check for the next d
         return checkPrimeRecursive(n, divisor + 1);
     }
 }
