@@ -1,0 +1,27 @@
+# Recursion Tasks in Java
+
+This repository contains solutions to recursion problems implemented in Java. Each task is designed to use recursion to solve different computational problems, such as calculating the factorial of a number, checking if a number is prime, calculating Fibonacci numbers, and more.
+
+## Tasks
+
+The following tasks are included in this project:
+
+1. **Finding the minimum element in an array using recursion**
+2. **Calculating the average of array elements using recursion**
+3. **Checking if a number is prime using recursion**
+4. **Calculating the factorial of a number using recursion**
+5. **Finding the n-th Fibonacci number using recursion**
+6. **Calculating exponentiation (a^n) using recursion**
+7. **Reversing an array without using additional data structures (using recursion)**
+8. **Checking if a string consists only of digits using recursion**
+9. **Calculating the binomial coefficient C(n, k) using recursion**
+10. **Calculating the Greatest Common Divisor (GCD) of two numbers using recursion**
+
+## Project Overview
+
+This project demonstrates the power of recursion in solving various computational problems. Each task solves a real-world problem using recursive methods, starting from simple problems like calculating factorials to more complex tasks like calculating GCD and Fibonacci numbers.
+
+### Key Features:
+- **Recursion**: All tasks are implemented using recursive methods.
+- **Time Complexity**: Time complexity for each algorithm is analyzed and included in the code comments.
+- **Execution Time**: Execution time is measured for each solution using `System.nanoTime()`.
